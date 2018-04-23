@@ -1,0 +1,17 @@
+<h1>register</h1>
+<hr>
+{{#if error}}
+<h3 style="color:red">{{ errMsg }}</h3>
+{{/if}}
+<form action="register" method="post">
+    <label for="username">username:</label>
+    <input type="text" name="username">
+    <br><br>
+    <label for="password">password:</label>
+    <input type="password" name="password">
+    <br><br>
+    <label for="confirmation">confirmation:</label>
+    <input type="password" name="confirmation">
+    <br><br>
+    <input type="submit" value="login">
+</form>

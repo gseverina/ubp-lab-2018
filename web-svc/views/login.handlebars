@@ -1,0 +1,18 @@
+<h1>LOGIN</h1>
+<hr>
+
+{{#if error}}
+<h3 style="color:red">{{ errMsg }}</h3>
+{{/if}}
+
+<form action="login" method="post">
+    <label for="username">username:</label>
+    <input type="text" name="username">
+    <br><br>
+    <label for="password">password:</label>
+    <input type="password" name="password">
+    <br><br>
+    <input type="submit" value="login">
+    <br><br>
+    <a href="register">register</a>
+</form>

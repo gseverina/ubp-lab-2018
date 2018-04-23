@@ -1,0 +1,22 @@
+<h1>Hello {{ title }}</h1>
+
+{{#if identified }}
+    <h2>identificado</h2>
+{{ else }}
+    <h2>anonimo</h2>
+{{/if}}
+
+{{#each items }}
+    <li>{{ this }}</li>
+{{/each}}
+
+<br>
+
+{{#each items as |val key| }}
+    <li>key:{{ key }}, val:{{ val }}</li>
+{{/each}}
+
+<br>
+
+<p>{{ foo }}</p>
+<p>{{ bar }}</p>
